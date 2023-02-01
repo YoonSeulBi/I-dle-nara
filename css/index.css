@@ -1,0 +1,483 @@
+@font-face {
+  font-family: "ONE-Mobile-POP";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/ONE-Mobile-POP.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  box-sizing: border-box;
+}
+body section h2 {
+  font-size: 3.5rem;
+  letter-spacing: 2px;
+  color: #221e1a;
+  font-family: "ONE-Mobile-POP";
+  line-height: 4.5rem;
+}
+body .sec_txt_sub {
+  font-size: 1.2rem;
+  margin: 1rem 0;
+}
+body .sec_txt_a {
+  display: block;
+  font-size: 1.2rem;
+}
+body .sec_txt_a::after {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  align-items: center;
+  content: "";
+  background: url(../img/icon_arrow_right_circle.svg) center center/cover no-repeat;
+  margin-left: 1rem;
+}
+body .sec_text_box {
+  width: 100%;
+  color: #221e1a;
+  transform: translateY(50%);
+  padding: 1em;
+}
+
+#wrap {
+  width: 100%;
+}
+
+#inaraHead {
+  background: rgba(255, 255, 255, 0.3);
+  position: fixed;
+  z-index: 9999;
+  width: 100%;
+  height: 10%;
+}
+#inaraHead .header_inner {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+#inaraHead .header_inner .logo {
+  width: 10%;
+  height: 70%;
+}
+#inaraHead .header_inner .logo img {
+  width: 100%;
+  height: 100%;
+}
+#inaraHead .header_inner .navbox {
+  width: 200px;
+  height: 100%;
+}
+#inaraHead .header_inner .navbox .app_down {
+  border: 1px solid #fff;
+  width: 70%;
+  height: 50%;
+  border-radius: 50px;
+  transform: translateY(50%);
+}
+#inaraHead .header_inner .navbox .app_down > :hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 50px;
+  transition: all 0.2s linear;
+}
+#inaraHead .header_inner .navbox a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+}
+#inaraHead .header_inner .navbox a span {
+  display: block;
+  padding: 0.7rem;
+}
+#inaraHead .header_inner .navbox .header_menu {
+  float: right;
+  width: 40px;
+  height: 40px;
+}
+#inaraHead .header_inner .navbox .header_menu > a {
+  background: url(../img/Menu_White.svg) center center/100% no-repeat;
+  transform: translateY(-50%);
+}
+
+#inaraMain {
+  background-color: #fff;
+}
+#inaraMain .sec01 {
+  width: 100%;
+  height: 100vh;
+  background-color: aqua;
+  position: relative;
+}
+#inaraMain .sec01 .sec01_wrap {
+  width: 100%;
+}
+#inaraMain .sec01 .sec01_wrap .sec01_txt {
+  position: absolute;
+  width: 100%;
+  height: 30%;
+  color: #fff;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 9999;
+  text-align: center;
+}
+#inaraMain .sec01 .sec01_wrap .sec01_txt h2 {
+  font-family: "ONE-Mobile-POP";
+  font-size: 5rem;
+  color: #fff;
+}
+#inaraMain .sec01 .sec01_wrap .sec01_txt p {
+  padding-top: 3rem;
+  line-height: 2rem;
+  font-size: 1.2rem;
+}
+#inaraMain .sec01 .sec01_wrap .sec01_txt h2.ani {
+  -webkit-animation: moveUp 1.5s both ease-in-out;
+          animation: moveUp 1.5s both ease-in-out;
+}
+@-webkit-keyframes moveUp {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes moveUp {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+#inaraMain .sec01 .sec01_wrap .gradient {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5));
+}
+#inaraMain .sec01 .sec01_wrap .sec01_video {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+#inaraMain .sec01 .sec01_wrap .sec01_video video {
+  width: 100%;
+}
+#inaraMain .sec01 .sec01_wrap .sec01_appdown {
+  position: absolute;
+  width: 20%;
+  height: 10%;
+  background: #fff;
+  border-radius: 100px;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#inaraMain .sec01 .sec01_wrap .sec01_appdown a {
+  display: block;
+  text-align: center;
+  padding: 2rem;
+  font-size: x-large;
+  font-weight: bold;
+  color: #332217;
+}
+#inaraMain .sec01 img {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-animation: arrowImg 0.4s ease-in-out infinite alternate;
+          animation: arrowImg 0.4s ease-in-out infinite alternate;
+}
+@-webkit-keyframes arrowImg {
+  0% {
+    bottom: 0;
+  }
+  100% {
+    bottom: 10px;
+  }
+}
+@keyframes arrowImg {
+  0% {
+    bottom: 0;
+  }
+  100% {
+    bottom: 10px;
+  }
+}
+#inaraMain .sec02 {
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  position: relative;
+}
+#inaraMain .sec02 .sec02_wrap {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+#inaraMain .sec02 .sec02_wrap .sec02_card_wrapper {
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  bottom: 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#inaraMain .sec02 .sec02_wrap .sec02_card_wrapper .sec02_card {
+  width: 32%;
+  height: 70%;
+  border-radius: 30px;
+  position: relative;
+}
+#inaraMain .sec02 .sec02_wrap .sec02_card_wrapper .sec02_card .sec02_card_txt {
+  margin: 1rem;
+  padding: 1rem 0;
+  color: #332217;
+}
+#inaraMain .sec02 .sec02_wrap .sec02_card_wrapper .sec02_card .sec02_card_txt h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 2rem;
+  color: #332217;
+}
+#inaraMain .sec02 .sec02_wrap .sec02_card_wrapper .sec02_card .sec02_card_txt p {
+  padding: 1rem 0;
+}
+#inaraMain .sec02 .sec02_wrap .sec02_card_wrapper .sec02_card .character {
+  position: absolute;
+  width: 60%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  bottom: 0;
+  right: 0;
+}
+#inaraMain .sec02 .sec02_wrap .sec02_card_wrapper .sec02_card .character img {
+  width: 100%;
+  height: 100%;
+}
+#inaraMain .sec02 .sec02_wrap .sec02_card_wrapper .sec02_card .card_arrow {
+  position: absolute;
+  left: 5%;
+  bottom: 5%;
+  width: 15%;
+  height: 20%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#inaraMain .sec02 .sec02_wrap .sec02_card_wrapper .card_1 {
+  background: #ffe552;
+}
+#inaraMain .sec02 .sec02_wrap .sec02_card_wrapper .card_2 {
+  background: #c2eaf3;
+}
+#inaraMain .sec02 .sec02_wrap .sec02_card_wrapper .card_3 {
+  background: #b2e9de;
+}
+#inaraMain .sec02 .sec02_wrap .sec02_card_wrapper > :hover {
+  box-shadow: rgba(0, 0, 0, 0.5) 3px 3px 8px;
+}
+#inaraMain .sec03 {
+  background: #fff;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+#inaraMain .sec03 .sec03_wrap {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+}
+#inaraMain .sec03 .sec03_card_wrapper {
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  left: 0;
+  bottom: 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#inaraMain .sec03 .sec03_card_wrapper .sec03_card {
+  background: pink;
+  border-radius: 30px;
+  position: relative;
+  overflow: hidden;
+  margin: 1rem;
+}
+#inaraMain .sec03 .sec03_card_wrapper .sec03_card .sec03_card_txt {
+  position: absolute;
+  margin: 1rem;
+  padding: 1.5rem;
+  height: 10%;
+  border-radius: 5rem;
+  left: 0;
+}
+#inaraMain .sec03 .sec03_card_wrapper .sec03_card .sec03_card_txt p {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: large;
+  line-height: 10%;
+  color: #fff;
+}
+#inaraMain .sec03 .sec03_card_wrapper .sec03_card a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+#inaraMain .sec03 .sec03_card_wrapper .sec03_card a .sec03_card_img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#inaraMain .sec03 .sec03_card_wrapper .sec03_card .play_arrow {
+  position: absolute;
+  width: 30%;
+  top: 40%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#inaraMain .sec03 .sec03_card_wrapper .sec03_card .dark {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.2);
+  width: 100%;
+  height: 100%;
+}
+#inaraMain .sec04 {
+  background-color: #ffe552;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+#inaraMain .sec04 .sec04_wrap {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+}
+#inaraMain .sec04 .shape_top {
+  position: absolute;
+  top: 0;
+}
+#inaraMain .sec04 .shape_bottom {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 45%;
+}
+#inaraMain .sec04 .main_join {
+  position: absolute;
+  width: 35%;
+  bottom: 0;
+  right: 0;
+}
+#inaraMain .sec04 .bird {
+  position: absolute;
+  width: 10%;
+  right: 15%;
+  transform: translateY(50%);
+  -webkit-animation: bird 1s ease-in-out infinite alternate;
+          animation: bird 1s ease-in-out infinite alternate;
+}
+@-webkit-keyframes bird {
+  from {
+    top: 0;
+  }
+  to {
+    top: 30px;
+  }
+}
+@keyframes bird {
+  from {
+    top: 0;
+  }
+  to {
+    top: 30px;
+  }
+}
+
+#inaraFooter {
+  background: #f2f2f2;
+  width: 100%;
+  position: relative;
+  font-size: 0.8rem;
+}
+#inaraFooter .footerInner {
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+}
+#inaraFooter .footerInner .footerEvent {
+  padding: 2rem 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+#inaraFooter .footerInner .footerEvent .eventList li {
+  padding: 0.3rem 0;
+}
+#inaraFooter .footerInner .footerEvent .footerSns {
+  display: flex;
+  gap: 1rem;
+  padding-top: 1rem;
+}
+#inaraFooter .footerInner .footerEvent .footerSns .icon a {
+  display: block;
+  background-color: #fff;
+  border-radius: 50px;
+  width: 35px;
+  height: 35px;
+  padding: 0.5rem;
+}
+#inaraFooter .footerInner .footerEvent .footerSns a:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: all 0.1s ease-in-out;
+}
+#inaraFooter .footerInner a:hover {
+  text-decoration: underline;
+}
+#inaraFooter .footerInner .footerInfo {
+  margin: 1rem 0;
+}
+#inaraFooter .footerInner .footerInfo a {
+  margin: 1rem;
+}
+#inaraFooter .footerInner .footerAddress {
+  gap: 1rem;
+  padding: 1rem;
+  position: relative;
+}
+#inaraFooter .footerInner .footerAddress .addressList {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+#inaraFooter .footerInner .footerAddress li:not(:last-child)::after {
+  position: absolute;
+  content: "";
+  width: 1px;
+  height: 10px;
+  background: #333;
+  margin-left: 0.5rem;
+}
+#inaraFooter .footerInner .footerAddress span {
+  display: block;
+  margin-top: 0.5rem;
+}
+#inaraFooter .footerInner .footerAddress p {
+  text-align: end;
+  font-size: 0.2rem;
+  letter-spacing: 0.01rem;
+}/*# sourceMappingURL=index.css.map */

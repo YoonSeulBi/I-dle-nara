@@ -1,0 +1,20 @@
+<svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <path id="5oukl7pd1a" d="M0 0h17.84v10.948H0z"/>
+        <path id="bqc55p0pic" d="M0 0h8.266v4.316H0z"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g transform="translate(1 8.052)">
+            <mask id="fmybupazdb" fill="#fff">
+                <use xlink:href="#5oukl7pd1a"/>
+            </mask>
+            <path d="M15.15 3.887a1.275 1.275 0 1 1 0-2.55 1.275 1.275 0 0 1 0 2.55M15.212 0H.22A.22.22 0 0 0 0 .22v4.025s.137 6.703 6.788 6.703c5.023 0 6.331-3.822 6.67-5.693h1.754a2.63 2.63 0 0 0 2.627-2.628A2.63 2.63 0 0 0 15.212 0" fill="#544E4B" mask="url(#fmybupazdb)"/>
+        </g>
+        <g transform="translate(4.699 2)">
+            <mask id="9h5m6d5iud" fill="#fff">
+                <use xlink:href="#bqc55p0pic"/>
+            </mask>
+            <path d="M8.203.066A.222.222 0 0 0 8.045 0L4.49.002H4.48C3.904.008 3.298.13 3.131.189 2.085.546.216 1.537.001 4.076a.221.221 0 0 0 .22.24h3.882v-.001h.181c.217-.003.594-.027.932-.133.975-.308 3.005-1.27 3.05-3.957a.221.221 0 0 0-.063-.159" fill="#544E4B" mask="url(#9h5m6d5iud)"/>
+        </g>
+    </g>
+</svg>
